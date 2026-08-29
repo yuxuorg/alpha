@@ -1,0 +1,57 @@
+玉虚幻境 · 版权与法律声明（Release LEGAL）
+
+═══════════════════════════════════════════════════
+一、作品信息
+名称：玉虚幻境（Yuxu）
+性质：网页游戏（Three.js/TypeScript 全前端）
+状态：公开演示版本（Demo）
+版权：© 2026 玉虚幻境项目组（保留一切权利，除下述明确授予的之外）
+
+二、软件许可（本项目自研代码）
+本项目源代码以 MIT License 发布：
+  - 允许：使用、复制、修改、合并、出版、分发、转售、再授权
+  - 条件：在软件和所有副本中保留版权声明与本许可声明
+  - 免责：按"现状"提供，无任何明示或默示保证
+（完整 MIT 文本见 LICENSE 文件 / 本文件第四节）
+
+三、第三方素材与软件（许可清单 · 均为可商用宽松许可）
+贴图与 HDRI：Poly Haven（CC0）
+  森林地面/泥土/陶瓦/木板/岩石/砖墙/白墙/天空 HDRI
+钢琴音色：Salamander Grand Piano（CC0 · Alexander Holm / tonejs 镜像）
+BGM 曲目：肖邦《夜曲 Op.9 No.2》/ 巴赫《G 大调小步舞曲》/ 贝多芬《月光奏鸣曲》——
+  均为公版（公有领域）旋律，本项目自编配（CC0）
+模型库：Quaternius 系列包（CC0）
+程序化树库：@dgreenheck/ez-tree（MIT · Daniel Greenheck）
+编程标注：本清单对应项目内 assets/LICENSES.md 完整台账（含链接与日期）
+
+四、MIT License（原文摘要，全文见开源仓库）
+Copyright (c) 2026 玉虚幻境项目组
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+五、免责声明
+1. 本作品为开源演示项目，非正式商业发行物；游戏内一切宗门、人物、地名、传说
+   均为虚构创作，与现实任何组织/人物/历史无关。
+2. 本作品按"现状"提供，不承诺可用性、稳定性或适用于任何特定目的；用户
+   自行承担使用风险。
+3. 游戏进度与设置仅存于用户本地设备（浏览器 localStorage），本项目不收集、
+   不上传任何用户数据。
+4. 虚拟物品/数值仅具游戏娱乐价值，不具备任何现实价值或兑换条件。
+
+六、反馈与联系
+项目开源仓库及作者联系方式见项目主页。（Demo 阶段占位）
+
+═══════════════════════════════════════════════════

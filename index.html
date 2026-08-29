@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0e1015">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <title>玉虚幻境</title>
+  <style>
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0e1015; }
+    #app { width: 100%; height: 100%; }
+    canvas { display: block; }
+    /* 竖屏提示（游戏为横屏设计） */
+    #rotate-hint { display: none; position: fixed; inset: 0; z-index: 99; background: rgba(14, 16, 21, .96);
+      color: #e8e6df; align-items: center; justify-content: center; text-align: center;
+      font-family: "Microsoft YaHei", system-ui, sans-serif; font-size: 16px; line-height: 2; }
+    @media (orientation: portrait) { #rotate-hint { display: flex; } }
+  </style>
+  <script type="module" crossorigin src="./assets/index-DUYbd9Sg.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <div id="rotate-hint">🔁 请将设备横屏<br>玉虚幻境 · 横屏体验最佳</div>
+</body>
+</html>
