@@ -1,27 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0e1015">
-  <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="icon" href="./icons/icon-192.png">
-  <link rel="apple-touch-icon" href="./icons/icon-192.png">
-  <title>玉虚幻境</title>
-  <style>
-    html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0e1015; }
-    #app { width: 100%; height: 100%; }
-    canvas { display: block; }
-    /* 竖屏提示（游戏为横屏设计） */
-    #rotate-hint { display: none; position: fixed; inset: 0; z-index: 99; background: rgba(14, 16, 21, .96);
-      color: #e8e6df; align-items: center; justify-content: center; text-align: center;
-      font-family: "Microsoft YaHei", system-ui, sans-serif; font-size: 16px; line-height: 2; }
-    @media (orientation: portrait) { #rotate-hint { display: flex; } }
-  </style>
-  <script type="module" crossorigin src="./assets/index-DUYbd9Sg.js"></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>玉虚幻境</title>
+	<link rel="preload" as="image" href="ui/keyart-720.jpg" imagesrcset="ui/keyart-720.jpg 1280w, ui/keyart.jpg 2560w" imagesizes="100vw" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Caveat+Brush&family=Kalam:wght@400;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet" />
+	<style>html,body{background:#000;width:100%;height:100%;margin:0;padding:0;overflow:hidden}#app,#app canvas{display:block}#fps{z-index:50;color:#e8f6ff;pointer-events:none;-webkit-backdrop-filter:blur(8px);letter-spacing:.02em;background:#080e168c;border-radius:6px;padding:5px 9px;font:500 12px/1.2 JetBrains Mono,ui-monospace,monospace;position:fixed;top:10px;left:12px}.loader-title{font-family:Noto Serif SC,Source Han Serif SC,Songti SC,SimSun,serif;font-weight:700}</style>
+  <script type="module" crossorigin src="./assets/index-DOf1309h.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/GPU-CCgDO5fU.js">
+  <link rel="modulepreload" crossorigin href="./assets/Frame-Baeda3sr.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-BLPDbtK3.css">
 </head>
 <body>
-  <div id="app"></div>
-  <div id="rotate-hint">🔁 请将设备横屏<br>玉虚幻境 · 横屏体验最佳</div>
+	<div id="app"></div>
+	<div id="fps">-- fps</div>
+	<div id="loader" role="status" aria-live="polite" aria-label="正在进入玉虚幻境">
+		<img class="loader-art" src="ui/keyart-720.jpg" srcset="ui/keyart-720.jpg 1280w, ui/keyart.jpg 2560w" sizes="100vw" alt="" decoding="async" fetchpriority="high" onload="this.classList.add('is-in')" />
+		<div class="loader-scrim"></div>
+		<div class="loader-inner">
+			<div class="loader-brand">
+				<p class="loader-kicker">修仙幻境</p>
+				<h1 class="loader-title">玉虚幻境</h1>
+				<p class="loader-tagline">海上有仙山，山在虚无缥缈间。</p>
+			</div>
+			<div class="loader-panel">
+				<div class="loader-row">
+					<span class="loader-status">启程…</span>
+					<span class="loader-meta"><span class="loader-pct">0%</span><span class="loader-time">0:00</span></span>
+				</div>
+				<div class="loader-bar"><div class="loader-fill"></div><div class="loader-glint"></div></div>
+				<div class="loader-note">首次进入需编译着色器，可能等待一两分钟；之后再访会快很多。</div>
+				<div class="loader-tips">
+					<span class="loader-tip-label">提示</span>
+					<div class="loader-tip-list">
+						<p class="loader-tip">按 <kbd>R</kbd> 取出鱼竿；按住鼠标左键蓄力，松开抛竿——蓄力越久，抛得越远。</p>
+						<p class="loader-tip">浮标先试探、后猛沉：就在沉底那一刻点击左键提竿。</p>
+						<p class="loader-tip">搏鱼时按住收线，把线张力保持在绿区；鱼发力就松手，否则会断线。</p>
+						<p class="loader-tip">能钓到什么，取决于水域与时辰——浅滩、礁区、深海之外，各有其鱼。</p>
+						<p class="loader-tip">岛上处处可去：沿滩漫步、登礁远眺，或驾船出海，看看远方的水色。</p>
+						<p class="loader-tip">渔获卖给码头的鱼摊，补给与升级在船屋旁的杂货铺；两者都在地图上。</p>
+						<p class="loader-tip">靠近船按 <kbd>E</kbd> 上船，在舵位再按一次掌舵；按 <kbd>I</kbd> 查看冷藏箱与图鉴。</p>
+						<p class="loader-tip">按 <kbd>H</kbd> 打开设置，<kbd>F1</kbd> 查看全部操作；进度会自动保存在浏览器中。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
